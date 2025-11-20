@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pro To-Do List</title>
+
+    <!-- Link external CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <h2 style="flex: 1">Pro To-Do List</h2>
+        <button class="themeBtn" onclick="toggleTheme()">🌙</button>
+      </div>
+
+      <div class="row">
+        <input id="taskInput" placeholder="Add a task..." />
+        <select id="prioritySelect">
+          <option value="high">High ⚠️</option>
+          <option value="medium" selected>Medium 🔹</option>
+          <option value="low">Low ✅</option>
+        </select>
+        <button class="addBtn" onclick="addTask()">+</button>
+      </div>
+
+      <ul id="taskList"></ul>
+    </div>
+
+    <!-- Link external JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
